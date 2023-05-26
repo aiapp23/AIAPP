@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_png"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textAlignment="center"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/login_text"
+        />
+
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User password"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/login"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/password_text"
+
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/password"
+        />
+
+
+
+
+</RelativeLayout>
